@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+$fontSecondary : 'Roboto', sans-serif;
+
+.home{
+    background-color: #000;
+
+    .jumbotron{
+        padding: 82px 60px; 
+        color: #fff;
+        background: url('../../assets/images/bg-hero.png');
+        background-size: cover;
+        font-family: $fontSecondary;
+        border-radius: 0 0 20px 20px;
+        
+        @include phone{
+            padding: 62px 40px; 
+            border-radius: 0 0 30px 30px;
+        }
+
+        >h1{
+            font-size: 54px;
+
+            @include phone{
+                font-size: 44px;
+            }    
+        }
+
+        >p{
+            font-size: 28px;
+            margin-top: 10px;
+
+            @include phone{
+                font-size: 18px;
+            }
+    
+        }
+    }
+
+    &__content{
+        padding: 52px 60px;
+        
+        @include phone{
+            padding: 32px 40px; 
+        }
+
+
+        &__title{
+            color: #B6B6B6;
+            font-size: 38px;
+            
+            @include phone{
+                font-size: 28px;
+            }
+        }
+
+        &__list{
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(193px, 1fr));
+            gap: 30px 20px;
+            
+            @include phone{
+                // grid-template-columns: repeat(auto-fill, minmax(193px, 1fr));
+            }
+        }
+
+        &__loadMore{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #B6B6B6;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #050E12;
+            border-radius: 4px;
+            margin-top: 20px;
+            text-transform: uppercase;
+
+            @include phone{
+                font-size: 10px;
+            }
+
+            &:hover{
+                box-shadow: 0px 0px 10px 4px #102b37;
+            }
+        }
+    }
+
+    >button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        background-color: rgb(128, 128, 128);
+        cursor: pointer;
+
+        position: fixed;
+        right: 60px;
+        bottom: 40px;
+
+        @include phone{
+            right: 30px;
+            bottom: 20px;
+        }
+
+        box-shadow: 0px 0px 10px 4px #102b37;
+
+        &:hover{
+            background-color: #ddd;
+        }
+
+        >img{
+            width: 80%;
+        }
+    }
+
+}

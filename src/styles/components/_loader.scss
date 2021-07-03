@@ -1,0 +1,35 @@
+.loader{
+    &__info{
+        display: flex;
+        align-items: flex-end;
+
+        >div:nth-child(1){
+            width: 205px;
+            height: 308px;
+            margin-right: 41px;
+        }
+
+        >div:nth-child(1){
+            width: 374px;
+        }
+    }
+
+    &__story{
+        >div:nth-child(1){
+            width: 200px;
+        }
+
+        >div:nth-child(1){
+            width: 969px;
+        }
+    }
+}
+
+.--list{
+    // height: 100px;
+    
+    >div{
+        margin-top: 6px;
+        height: 60px;
+    }
+}

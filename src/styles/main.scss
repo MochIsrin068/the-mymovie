@@ -1,0 +1,11 @@
+// BASE
+@import './base/reset';
+@import './base/mq';
+
+// PAGES
+@import './pages/home';
+@import './pages/detailMovie';
+
+// COMPONENTS
+@import './components/loader';
+@import './components/movieCard';
